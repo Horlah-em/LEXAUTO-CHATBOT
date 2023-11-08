@@ -36,7 +36,7 @@ client.recreate_collection(
     vectors_config=vectors_config,
     )
 
-os.environ['OPENAI_API_KEY']= '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'
+os.environ['OPENAI_API_KEY']= ''
 embeddings = OpenAIEmbeddings()
 
 vector_store =Qdrant(
