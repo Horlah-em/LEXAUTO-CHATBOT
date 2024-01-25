@@ -21,6 +21,7 @@ client = qdrant_client.QdrantClient(
     api_key=os.getenv('QDRANT_API_KEY')
     )
 
+
 #create collection
 
 os.environ['QDRANT_COLLECTION_NAME']= 'my_collection'
@@ -76,7 +77,8 @@ qa= RetrievalQA.from_chain_type(
     chain_type="stuff",
     retriever=vector_store.as_retriever()
     )
-     
+
+
 
 query=input("Enter your Question")
 

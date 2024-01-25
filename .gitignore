@@ -1,4 +1,2 @@
-venv
+.venv
 .env
-LexPDFchat.py
-main.py
